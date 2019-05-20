@@ -17,7 +17,7 @@
 		2F71723D228F2209000E44A1 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71723C228F2209000E44A1 /* ViewPresenter.swift */; };
 		2F71723F228FECB7000E44A1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71723E228FECB7000E44A1 /* CircleView.swift */; };
 		2F717241228FF326000E44A1 /* CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F717240228FF326000E44A1 /* CoordinateManager.swift */; };
-		2F717243228FF5BB000E44A1 /* ArrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F717242228FF5BB000E44A1 /* ArrowViewController.swift */; };
+		2F71724C22926753000E44A1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71724B22926753000E44A1 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		2F71723C228F2209000E44A1 /* ViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 		2F71723E228FECB7000E44A1 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		2F717240228FF326000E44A1 /* CoordinateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateManager.swift; sourceTree = "<group>"; };
-		2F717242228FF5BB000E44A1 /* ArrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowViewController.swift; sourceTree = "<group>"; };
+		2F71724B22926753000E44A1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +105,14 @@
 		2F717203228EB02A000E44A1 /* SixFace */ = {
 			isa = PBXGroup;
 			children = (
+				2F71724A22926720000E44A1 /* Util */,
+				2F717246229266A0000E44A1 /* Model */,
+				2F71724522926698000E44A1 /* View */,
+				2F7172442292668D000E44A1 /* Presenter */,
 				2F717204228EB02A000E44A1 /* AppDelegate.swift */,
-				2F717206228EB02A000E44A1 /* ViewController.swift */,
-				2F717208228EB02A000E44A1 /* Main.storyboard */,
 				2F71720B228EB02B000E44A1 /* Assets.xcassets */,
 				2F71720D228EB02B000E44A1 /* LaunchScreen.storyboard */,
 				2F717210228EB02B000E44A1 /* Info.plist */,
-				2F71723C228F2209000E44A1 /* ViewPresenter.swift */,
-				2F71723E228FECB7000E44A1 /* CircleView.swift */,
-				2F717240228FF326000E44A1 /* CoordinateManager.swift */,
-				2F717242228FF5BB000E44A1 /* ArrowViewController.swift */,
 			);
 			path = SixFace;
 			sourceTree = "<group>";
@@ -135,6 +133,64 @@
 				2F717226228EB02B000E44A1 /* Info.plist */,
 			);
 			path = SixFaceUITests;
+			sourceTree = "<group>";
+		};
+		2F7172442292668D000E44A1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F71723C228F2209000E44A1 /* ViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2F71724522926698000E44A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F717249229266EE000E44A1 /* CustomViews */,
+				2F717248229266CD000E44A1 /* Storyboards */,
+				2F717247229266AF000E44A1 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F717246229266A0000E44A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F71724B22926753000E44A1 /* APIClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F717247229266AF000E44A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F717206228EB02A000E44A1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F717248229266CD000E44A1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2F717208228EB02A000E44A1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2F717249229266EE000E44A1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2F71723E228FECB7000E44A1 /* CircleView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2F71724A22926720000E44A1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2F717240228FF326000E44A1 /* CoordinateManager.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,11 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F717243228FF5BB000E44A1 /* ArrowViewController.swift in Sources */,
 				2F717241228FF326000E44A1 /* CoordinateManager.swift in Sources */,
 				2F71723F228FECB7000E44A1 /* CircleView.swift in Sources */,
 				2F71723D228F2209000E44A1 /* ViewPresenter.swift in Sources */,
 				2F717207228EB02A000E44A1 /* ViewController.swift in Sources */,
+				2F71724C22926753000E44A1 /* APIClient.swift in Sources */,
 				2F717205228EB02A000E44A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

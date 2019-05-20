@@ -1,17 +1,8 @@
-//
-//  CircleView.swift
-//  SixFace
-//
-//  Created by Watanabe Takehiro on 2019/05/18.
-//  Copyright © 2019 Watanabe Takehiro. All rights reserved.
-//
-
 import UIKit
 
 public protocol RotaryProtocol: class {
     func touchesBegan()
     func touchesEnded()
-    func updatedRagianAngle(circleView: CircleView, angle: CGFloat)
 }
 
 @IBDesignable
@@ -92,7 +83,7 @@ public class CircleView: UIView {
         return angle
     }
     
-    // タッチ開始処理
+    // タップ開始処理
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.delegate?.touchesBegan()
         // 現状のimageViewのstransformを更新
@@ -103,19 +94,15 @@ public class CircleView: UIView {
     }
     
     public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // タッチされた座標をもとめる
+        // タップされた座標をもとめる
         guard let targetAngle = makeDeltaAngle(touches: touches) else { return }
-        // タッチが開始された
+        // タップが開始された
         let angleDifference = deltaAngle - targetAngle
         imageView.transform = startTransform?.rotated(by: -angleDifference) ?? CGAffineTransform.identity
-        let angle = self.getAngle()
-        self.delegate?.updatedRagianAngle(circleView: self, angle: angle)
     }
     
-    //
+    // タップ終了処理
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let angle = self.getAngle()
-        self.delegate?.updatedRagianAngle(circleView: self, angle: angle)
         self.delegate?.touchesEnded()
     }
 

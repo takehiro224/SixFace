@@ -1,11 +1,3 @@
-//
-//  CoordinateManager.swift
-//  SixFace
-//
-//  Created by Watanabe Takehiro on 2019/05/18.
-//  Copyright © 2019 Watanabe Takehiro. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
