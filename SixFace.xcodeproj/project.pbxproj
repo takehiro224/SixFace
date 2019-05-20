@@ -14,6 +14,10 @@
 		2F71720F228EB02B000E44A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F71720D228EB02B000E44A1 /* LaunchScreen.storyboard */; };
 		2F71721A228EB02B000E44A1 /* SixFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F717219228EB02B000E44A1 /* SixFaceTests.swift */; };
 		2F717225228EB02B000E44A1 /* SixFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F717224228EB02B000E44A1 /* SixFaceUITests.swift */; };
+		2F71723D228F2209000E44A1 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71723C228F2209000E44A1 /* ViewPresenter.swift */; };
+		2F71723F228FECB7000E44A1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71723E228FECB7000E44A1 /* CircleView.swift */; };
+		2F717241228FF326000E44A1 /* CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F717240228FF326000E44A1 /* CoordinateManager.swift */; };
+		2F717243228FF5BB000E44A1 /* ArrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F717242228FF5BB000E44A1 /* ArrowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		2F717220228EB02B000E44A1 /* SixFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F717224228EB02B000E44A1 /* SixFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixFaceUITests.swift; sourceTree = "<group>"; };
 		2F717226228EB02B000E44A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F71723C228F2209000E44A1 /* ViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
+		2F71723E228FECB7000E44A1 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		2F717240228FF326000E44A1 /* CoordinateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateManager.swift; sourceTree = "<group>"; };
+		2F717242228FF5BB000E44A1 /* ArrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				2F71720B228EB02B000E44A1 /* Assets.xcassets */,
 				2F71720D228EB02B000E44A1 /* LaunchScreen.storyboard */,
 				2F717210228EB02B000E44A1 /* Info.plist */,
+				2F71723C228F2209000E44A1 /* ViewPresenter.swift */,
+				2F71723E228FECB7000E44A1 /* CircleView.swift */,
+				2F717240228FF326000E44A1 /* CoordinateManager.swift */,
+				2F717242228FF5BB000E44A1 /* ArrowViewController.swift */,
 			);
 			path = SixFace;
 			sourceTree = "<group>";
@@ -256,6 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F717243228FF5BB000E44A1 /* ArrowViewController.swift in Sources */,
+				2F717241228FF326000E44A1 /* CoordinateManager.swift in Sources */,
+				2F71723F228FECB7000E44A1 /* CircleView.swift in Sources */,
+				2F71723D228F2209000E44A1 /* ViewPresenter.swift in Sources */,
 				2F717207228EB02A000E44A1 /* ViewController.swift in Sources */,
 				2F717205228EB02A000E44A1 /* AppDelegate.swift in Sources */,
 			);
